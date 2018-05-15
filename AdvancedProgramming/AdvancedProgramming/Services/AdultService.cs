@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using AdvancedProgramming.DbContext;
+using AdvancedProgramming.Enums;
 using AdvancedProgramming.Interfaces;
 using AdvancedProgramming.Models;
 
@@ -14,12 +15,16 @@ namespace AdvancedProgramming.Services
     {
         private DatabaseContext _db;
 
+        public AdultService()
+        {
+        }
+
         public AdultService(DatabaseContext db)
         {
             _db = db;
         }
 
-        public async Task<bool> CreateAdult(string firstName, string lastName, int age, string job, bool singiel, double salary)
+        public async Task<bool> CreateAdult(string firstName, string lastName, int age, string job, Singiel singiel, double salary)
         {
             try
             {

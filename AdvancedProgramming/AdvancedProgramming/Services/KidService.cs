@@ -15,6 +15,10 @@ namespace AdvancedProgramming.Services
     {
         private DatabaseContext _db;
 
+        public KidService()
+        {
+        }
+
         public KidService(DatabaseContext db)
         {
             _db = db;

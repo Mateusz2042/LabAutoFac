@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using AdvancedProgramming.Enums;
 using AdvancedProgramming.Interfaces;
 using AdvancedProgramming.Models;
 
@@ -30,7 +31,7 @@ namespace AdvancedProgramming.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(string firstName, string lastName, int age, string job, bool singiel, double salary)
+        public async Task<ActionResult> Create(string firstName, string lastName, int age, string job, Singiel singiel, double salary)
         {
             if (ModelState.IsValid)
             {

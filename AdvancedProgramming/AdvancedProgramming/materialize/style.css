@@ -1,0 +1,38 @@
+﻿.btn {
+    background-color: #448aff;
+}
+
+div.nav {
+    background-color: #2979ff;
+    border: 1px solid black;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #82b1ff;
+}
+
+div.wgt {
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+
+div.ft {
+    font-weight: bold;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+div.gtd {
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+}

@@ -13,10 +13,12 @@ namespace AdvancedProgramming.Controllers
     public class AdultController : Controller
     {
         private IServiceAdult _adultService;
+        private IFilterAdult _filterAdult;
 
-        public AdultController(IServiceAdult adultService)
+        public AdultController(IServiceAdult adultService, IFilterAdult filterAdult)
         {
             _adultService = adultService;
+            _filterAdult = filterAdult;
         }
 
         // GET: Adult
@@ -48,6 +50,18 @@ namespace AdvancedProgramming.Controllers
         public ActionResult Display()
         {
             return View(_adultService.DisplayAdults());
+        }
+
+        [HttpGet]
+        public ActionResult Filter()
+        {
+            return View(_adultService.DisplayAdults());
+        }
+
+        [HttpPost]
+        public ActionResult Filter(string text)
+        {
+            return View(_filterAdult.Filter(text));
         }
 
         [HttpGet]

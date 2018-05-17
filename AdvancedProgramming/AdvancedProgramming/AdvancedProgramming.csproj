@@ -239,6 +239,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IDependency.cs" />
+    <Compile Include="Interfaces\IFilterAdult.cs" />
     <Compile Include="Interfaces\IFilterKid.cs" />
     <Compile Include="Interfaces\IServiceAdult.cs" />
     <Compile Include="Interfaces\IServiceKid.cs" />
@@ -339,6 +340,7 @@
     <Content Include="Views\Adult\Delete.cshtml" />
     <Content Include="Views\Adult\Create.cshtml" />
     <Content Include="Views\Kid\Filter.cshtml" />
+    <Content Include="Views\Adult\Filter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

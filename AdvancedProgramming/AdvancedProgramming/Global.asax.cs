@@ -35,6 +35,7 @@ namespace AdvancedProgramming
             builder.RegisterType<KidService>().As<IServiceKid>().SingleInstance().PreserveExistingDefaults();
             builder.RegisterType<AdultService>().As<IServiceAdult>().SingleInstance().PreserveExistingDefaults();
             builder.RegisterType<KidService>().As<IFilterKid>().SingleInstance().PreserveExistingDefaults();
+            builder.RegisterType<AdultService>().As<IFilterAdult>().SingleInstance().PreserveExistingDefaults();
             builder.RegisterType<DatabaseContext>();
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

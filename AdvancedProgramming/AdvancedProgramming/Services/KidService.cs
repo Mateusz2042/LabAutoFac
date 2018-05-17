@@ -11,7 +11,7 @@ using AdvancedProgramming.Models;
 
 namespace AdvancedProgramming.Services
 {
-    public class KidService : IServiceKid
+    public class KidService : IServiceKid, IFilterKid
     {
         private DatabaseContext _db;
 
@@ -117,6 +117,18 @@ namespace AdvancedProgramming.Services
             {
                 return false;
             }
+        }
+
+        public List<Kid> Filter(string text)
+        {
+            var kidList = _db.Kids.ToList();
+
+            if (!String.IsNullOrEmpty(text))
+            {
+                kidList = kidList.Where(s => s.FirstName.Contains(text) || s.LastName.Contains(text)).ToList();
+            }
+
+            return kidList;
         }
     }
 }

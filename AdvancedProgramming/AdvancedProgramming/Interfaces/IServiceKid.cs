@@ -8,7 +8,7 @@ using System.Web;
 
 namespace AdvancedProgramming.Interfaces
 {
-    public interface IServiceKid
+    public interface IServiceKid: IDependency
     {
         List<Kid> DisplayKids();
         Task<bool> CreateKid(string firstName, string lastName, int age, SchoolType schoolType, string nameClass, double pocketMonetValue);

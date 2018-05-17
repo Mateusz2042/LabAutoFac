@@ -1,6 +1,0 @@
-C:\Users\user\Desktop\LabAutoFac\AdvancedProgramming\TestAutoFac\bin\Debug\netstandard2.0\TestAutoFac.deps.json
-C:\Users\user\Desktop\LabAutoFac\AdvancedProgramming\TestAutoFac\bin\Debug\netstandard2.0\TestAutoFac.dll
-C:\Users\user\Desktop\LabAutoFac\AdvancedProgramming\TestAutoFac\obj\Debug\netstandard2.0\TestAutoFac.csprojAssemblyReference.cache
-C:\Users\user\Desktop\LabAutoFac\AdvancedProgramming\TestAutoFac\obj\Debug\netstandard2.0\TestAutoFac.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\LabAutoFac\AdvancedProgramming\TestAutoFac\obj\Debug\netstandard2.0\TestAutoFac.AssemblyInfoInputs.cache
-C:\Users\user\Desktop\LabAutoFac\AdvancedProgramming\TestAutoFac\obj\Debug\netstandard2.0\TestAutoFac.AssemblyInfo.cs

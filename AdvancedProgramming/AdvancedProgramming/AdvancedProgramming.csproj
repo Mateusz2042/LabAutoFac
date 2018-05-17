@@ -238,6 +238,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IDependency.cs" />
+    <Compile Include="Interfaces\IFilterKid.cs" />
     <Compile Include="Interfaces\IServiceAdult.cs" />
     <Compile Include="Interfaces\IServiceKid.cs" />
     <Compile Include="Migrations\201805142124484_InitMigration.cs" />
@@ -336,6 +338,7 @@
     <Content Include="Views\Adult\Details.cshtml" />
     <Content Include="Views\Adult\Delete.cshtml" />
     <Content Include="Views\Adult\Create.cshtml" />
+    <Content Include="Views\Kid\Filter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -13,10 +13,12 @@ namespace AdvancedProgramming.Controllers
     public class KidController : Controller
     {
         private IServiceKid _kidService;
+        private IFilterKid _filterKid;
 
-        public KidController(IServiceKid kidService)
+        public KidController(IServiceKid kidService, IFilterKid filterKid)
         {
             _kidService = kidService;
+            _filterKid = filterKid;
         }
 
         // GET: Kid
@@ -48,6 +50,18 @@ namespace AdvancedProgramming.Controllers
         public ActionResult Display()
         {
             return View(_kidService.DisplayKids());
+        }
+
+        [HttpGet]
+        public ActionResult Filter()
+        {
+            return View(_kidService.DisplayKids());
+        }
+
+        [HttpPost]
+        public ActionResult Filter(string text)
+        {
+            return View(_filterKid.Filter(text));
         }
 
         [HttpGet]

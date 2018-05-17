@@ -8,7 +8,7 @@ using AdvancedProgramming.Enums;
 
 namespace AdvancedProgramming.Interfaces
 {
-    public interface IServiceAdult
+    public interface IServiceAdult: IDependency
     {
         List<Adult> DisplayAdults();
         Task<bool> CreateAdult(string firstName, string lastName, int age, string job, Singiel singiel, double salary);
